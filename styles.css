@@ -1,0 +1,142 @@
+/************
+REFERECE
+
+Orange  /   		/ #FF5F14
+Gray 	/ Light  	/ #999999
+Gray 	/ Medium 	/ #404040
+Gray 	/ Dark   	/ #2B2B2B
+
+Slab-serif   			/ adelle							/ 100,600
+Sans-serif				/ proxima-nova						/ 100
+Sans-serif Condensed 	/ proxima-nova-extra-condensed		/ 100
+
+/************/
+.orange {
+color: #FF5F14;}
+
+body {
+margin: 0;
+background-color: #404040;}
+
+* {
+position: relative;}
+
+header {
+color: white;
+background-color: #FF5F14;
+height: 70px;
+margin: 0;}
+
+	header #logo {
+	margin: 20px;
+	display: inline-block;
+	font: 600 30px/1em "adelle";
+	font-style: italic;}
+	
+h1 {
+font: 100 44px/1em "adelle";
+color: white;
+margin-left: 20px;
+-webkit-font-smoothing: antialiased;}
+
+p a {
+color: #FF5F14;
+text-decoration: none;}
+
+
+/* FEED */
+.feed .article {
+background-color: #2B2B2B;
+margin: 0 0 20px 20px;
+padding: 15px;
+box-shadow: 0px 0px 5px 1px #333;
+cursor: pointer;}
+.feed .article:hover {
+box-shadow: 0px 0px 0px 1px #FF5F14;}
+.feed .article.active {
+box-shadow: 50px 0 0 0 #2B2B2B;
+cursor: default;}
+
+	.feed .article .thumb {
+	width: 30%;
+	float: left;}
+
+		.feed .article .thumb .img {
+		height: 100px;
+		width: 100%;
+		border: 1px solid black;
+		background-color: white;
+		background-size: cover;}
+	
+	.feed .article .read {
+	width: 70%;
+	display: inline-block;}
+	
+		.feed .article .read h2 {
+		color: white;
+		margin: 0 15px 8px 15px;
+		font: 100 22px/1.3em "proxima-nova-extra-condensed";
+		font-stretch: condensed;}
+		
+		.feed .article .read p.excerpt {
+		margin: 0 15px 0 15px;
+		font: 100 14px/1.3em "proxima-nova";
+		color: #999999;}
+		
+	.feed .article .info {
+	color: #999999;
+	margin: 0 15px 0 0;
+	padding-top: 10px;
+	font: 100 14px/1em "proxima-nova";
+	clear: both;}
+	
+/* ARTICLE BODY */
+
+#article_body {
+background-color: #2B2B2B;
+border-top: 5px solid #FF5F14;
+padding: 30px;
+margin: 30px 20px 30px 0;}
+
+	#article_body .info {
+	margin: 0;
+	color: #999999;
+	font: 100 18px/1.3em "proxima-nova";}
+	
+	#article_body h2 {
+	font: 100 44px/1.3em "adelle";
+	color: white;
+	margin: 10px 0 10px 0;
+	-webkit-font-smoothing: antialiased;}
+	
+	#share_comments {
+	height: 32px;}
+	
+	#share_comments a#share {
+	float: left;
+	height: 100%;
+	width: 70px;
+	background: #FF5F14 url('images/share.png') center center no-repeat;
+	display: block;}
+	
+	#share_comments a#comments {
+	float: left;
+	margin-left: 2px;
+	height: 100%;
+	width: 110px;
+	background: #404040 url('images/comments.png') 28px center no-repeat;
+	display: block;
+	text-decoration: none;}
+	
+		#share_comments a#comments span {
+		color: white;
+		font: 100 18px/1em "adelle";
+		top: 5px;
+		left: 56px;}
+		
+	#article_body img#main_img {
+	margin-top: 20px;}
+	
+	#article_body p {
+	color: white;
+	font: 100 16px/1.5em "proxima-nova";}
